@@ -2,7 +2,7 @@ import React from 'react';
 import { AlertCircle } from 'lucide-react';
 
 interface SOSButtonProps {
-  onClick?: () => void; // Making onClick optional
+  onClick?: () => void; 
 }
 
 export const SOSButton: React.FC<SOSButtonProps> = ({ onClick }) => {
@@ -11,7 +11,7 @@ export const SOSButton: React.FC<SOSButtonProps> = ({ onClick }) => {
 
     try {
       const response = await fetch(
-        'https://maker.ifttt.com/trigger/sos_call/with/key/lYPKa9nbzMvLLCgOoUEL-Gbe-d2Kahv8wyhjs4Pky1H',
+        'API key',
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
